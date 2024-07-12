@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: poppins, sans-serif;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+#content {
+  flex-grow: 7;
+}
+#aside {
+  flex-grow: 1;
+}
+
+header {
+  display: inline;
+}
+
+h2,
+h3 {
+  font-style: bold;
+  color: #003feb;
+}
+
+.jumbotron {
+  font-size: 20px;
+  padding: 60px;
+  text-align: center;
+  background-color: #00c8eb;
+  color: white;
+}
+
+.card {
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.541);
+  padding: 20px;
+  border-radius: 7px;
+  margin-top: 10px;
+}
+
+nav {
+  background-color: #00a2c6;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 30px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: 0;
+}
+
+nav ul li a:hover {
+  font-weight: bold;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #00c8eb;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+  background-color: 00c8eb;
+}
+
+.logo {
+  margin: auto;
+  width: 60%;
+  height: auto;
+  display: flex;
+}
+
+.menu {
+  padding: 50;
+  width: 50%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+section {
+  border: 3px solid #003feb;
+  padding: 10px;
+}
+
+/* HP */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  nav {
+    text-align: center;
+  }
+  .jumbotron {
+    font-size: 18px;
+  }
+  nav ul li a {
+    font-size: 10px;
+  }
+  nav ul li {
+    margin-right: 10px;
+  }
+}
